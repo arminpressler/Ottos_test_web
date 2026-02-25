@@ -1,19 +1,12 @@
 ## Summary
+- _What problem does this change address?_ 
+- _Key changes in this PR_
 
-Describe the change and the purpose of this PR.
+## Testing
+- [ ] Manual QA on preview branch
+- [ ] Automated tests (if available)
+- Details: <!-- e.g., `npm test`, manual steps -->
 
-## Preview
-
-Preview link (htmlpreview): https://htmlpreview.github.io/?https://github.com/arminpressler/Ottos_test_web/blob/<branch>/index.html
-Raw githack link: https://raw.githack.com/arminpressler/Ottos_test_web/<branch>/index.html
-
-Replace <branch> with the branch name for preview.
-
-Checklist:
-- [ ] Preview link tested
-- [ ] Visual/functional checks passed
-- [ ] Accessibility basics reviewed
-
----
-
-Created by OTTO blue.5
+## Checks
+- [ ] Issue linked (e.g., `Fixes #123`)
+- [ ] Base branch is `preview`
