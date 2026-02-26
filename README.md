@@ -3,11 +3,11 @@
 Simple GitHub Pages site used for testing the OpenClaw agent.
 
 ## Live Site
-https://arminpressler.github.io/Ottos_test_web/
+<a href="https://arminpressler.github.io/Ottos_test_web/" target="_blank" rel="noopener noreferrer">https://arminpressler.github.io/Ottos_test_web/</a>
 
 ## Preview Environment
 Latest staging build from the `preview` branch:
-https://htmlpreview.github.io/?https://github.com/arminpressler/Ottos_test_web/blob/preview/index.html
+<a href="https://htmlpreview.github.io/?https://github.com/arminpressler/Ottos_test_web/blob/preview/index.html" target="_blank" rel="noopener noreferrer">https://htmlpreview.github.io/?https://github.com/arminpressler/Ottos_test_web/blob/preview/index.html</a>
 
 ## Branch & Deployment Workflow
 
