@@ -10,3 +10,6 @@
 ## Checks
 - [ ] Issue linked (e.g., `Fixes #123`)
 - [ ] Base branch is `preview`
+- [ ] Branch rebased/merged with latest `preview` after the last push
+- [ ] CI checks (including sync check) are green
+- [ ] Any manual conflict resolution is documented in the PR description or comments (if applicable)

@@ -1,0 +1,29 @@
+name: PR Sync Check
+
+on:
+  pull_request:
+    branches: [ preview ]
+    types: [opened, reopened, synchronize, ready_for_review]
+
+jobs:
+  sync-check:
+    name: Ensure PR branch is up to date with preview
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch preview branch
+        run: git fetch origin preview
+
+      - name: Verify merge with preview
+        run: |
+          set -eo pipefail
+          git merge --no-commit --no-ff origin/preview || {
+            echo "::error::Conflicts detected when merging origin/preview into this PR branch. Please rebase or merge preview locally, resolve conflicts, and push again.";
+            git merge --abort || true
+            exit 1
+          }
+          git merge --abort
