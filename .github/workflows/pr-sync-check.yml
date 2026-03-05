@@ -26,4 +26,6 @@ jobs:
             git merge --abort || true
             exit 1
           }
-          git merge --abort
+          if [ -f .git/MERGE_HEAD ]; then
+            git merge --abort
+          fi
