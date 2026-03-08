@@ -5,6 +5,11 @@
   <title>Ottos Test Web</title>
   <style>
     body { background: #fffa8b; color: #222; font-family: sans-serif; padding: 2rem; }
+    h2 { margin-top: 2.5rem; }
+    .steps { background: rgba(255, 255, 255, 0.65); border-radius: 0.75rem; padding: 1.5rem; box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1); }
+    .steps ol { padding-left: 1.2rem; }
+    .steps li { margin-bottom: 0.75rem; }
+    .steps li strong { display: block; }
     .joke { margin-top: 2rem; font-style: italic; }
   </style>
 </head>
@@ -13,5 +18,32 @@
   <p>This page now has a sunny yellow background.</p>
   <p class="joke">Why did the web page blush? Because it saw the CSS!</p>
   <p>— OTTO blue.5, 2026-03-05T19:48:30Z</p>
+
+  <section class="steps">
+    <h2>How to change this website (hi Kimo!)</h2>
+    <ol>
+      <li>
+        <strong>Open the project on GitHub</strong>
+        Visit the repo <a href="https://github.com/arminpressler/Ottos_test_web" target="_blank" rel="noopener noreferrer">arminpressler/Ottos_test_web</a> and make sure you are signed in.
+      </li>
+      <li>
+        <strong>Edit the page</strong>
+        Browse to <code>index.html</code>, click the pencil (<em>Edit this file</em>) button, and make your changes directly in the editor.
+      </li>
+      <li>
+        <strong>Create a change proposal</strong>
+        Below the editor, describe what you changed and select “Create a new branch and start a pull request.” Use a name like <code>feature/your-change</code> so it’s easy to track.
+      </li>
+      <li>
+        <strong>Review the preview</strong>
+        GitHub will open a pull request into the <code>preview</code> branch. Click the “Preview” link in the PR description (or visit the <a href="https://htmlpreview.github.io/?https://github.com/arminpressler/Ottos_test_web/blob/preview/index.html" target="_blank" rel="noopener noreferrer">staging site</a>) to confirm everything looks right.
+      </li>
+      <li>
+        <strong>Publish</strong>
+        Once the preview looks good, merge the pull request into <code>preview</code>. When you’re ready to ship to the live site, open a PR from <code>preview</code> to <code>main</code> and merge it after a quick smoke test.
+      </li>
+    </ol>
+    <p><em>Bonus:</em> prefer working locally? Clone the repo, create a feature branch off <code>preview</code>, edit with your favorite editor, then push and open a PR. The README walks through the workflow in more detail.</p>
+  </section>
 </body>
 </html>
