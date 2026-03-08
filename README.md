@@ -18,3 +18,14 @@ The repository now uses a permanent `preview` branch to stage changes before the
 3. **Merge `preview` into `main`**: once the staged changes are approved, promote them by opening a PR from `preview` to `main`, running a final smoke test, and merging when everything looks good.
 
 This flow keeps `main` stable while allowing continuous testing on `preview`. Update `CONTRIBUTING.md` for detailed contributor steps.
+
+## Quick web-edit demo (for Kimo)
+
+Need to tweak the page straight from the browser? Here's the fastest path:
+
+1. Open [index.html on GitHub](https://github.com/arminpressler/Ottos_test_web/blob/main/index.html) and click the pencil button.
+2. Make your edits, describe the change, and choose **Create a new branch and start a pull request**.
+3. GitHub will open a PR targeting `preview`—review the staged page via the Preview link or the [preview site](https://htmlpreview.github.io/?https://github.com/arminpressler/Ottos_test_web/blob/preview/index.html).
+4. Merge the PR once it looks good, then promote `preview` → `main` when you’re ready to publish.
+
+Prefer working locally? Clone the repo, branch off `preview`, edit with your favorite editor, then push and follow the same PR flow. CONTRIBUTING.md lists the full workflow.
